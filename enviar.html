@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Item</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="carregarItem()">
+    <h1 class="title-3d">Enviar Item</h1>
+
+    <div class="container">
+        <h2>Você escolheu:</h2>
+        <img id="selected-img" src="" alt="Item Selecionado">
+        <p id="selected-name"></p>
+
+        <label for="user-id">Digite seu ID:</label>
+        <input type="text" id="user-id" placeholder="Seu ID aqui..." oninput="validarID()">
+        <div id="error-message" class="hidden">Somente números</div>
+
+        <button class="button" onclick="enviarItem()">Enviar</button>
+        <div id="login-message" class="hidden">Você precisa estar logado para enviar o item.</div>
+    </div>
+</body>
+</html>
